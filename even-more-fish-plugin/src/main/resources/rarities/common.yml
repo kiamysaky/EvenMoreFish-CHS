@@ -11,7 +11,11 @@ size:
 
 fish:
   Cod: ''
+    item: 
+      displayname: 鳕鱼
   Atlantic Cod:
+    item: 
+      displayname: 大西洋鳕鱼
     requirements:
       biome:
         - COLD_OCEAN
@@ -22,37 +26,73 @@ fish:
         - OCEAN
         - WARM_OCEAN
   Rockfish: ''
+    item: 
+      displayname: 石斑鱼
   Tuna: ''
+    item: 
+      displayname: 金枪鱼
   Mackerel: ''
+    item: 
+      displayname: 鲭鱼
   Spanish Mackerel:
     item:
+      displayname: 鲅鱼
       lore:
         - <gray>Hola!
   Salmon:
     item:
+      displayname: 三文鱼
       material: SALMON
   Pufferfish:
     item:
+      displayname: 河豚
       material: PUFFERFISH
     effect: POISON:1:2
   Tropical Fish:
     item:
+      displayname: 热带鱼
       material: TROPICAL_FISH
   Red Mullet: ''
+    item:
+      displayname: 红鲻鱼
   Anchovy: ''
+    item:
+      displayname: 热带鱼
   Haddock: ''
+    item:
+      displayname: 黑线鳕
   Bluefish: ''
+    item:
+      displayname: 蓝鲣
   Carp: ''
+    item:
+      displayname: 鲤鱼
   Silver Carp: ''
+    item:
+      displayname: 鲢鱼
   Grass Carp: ''
+    item:
+      displayname: 草鱼
   Koi Carp: ''
+    item:
+      displayname: 锦鲤
   Black Carp: ''
+    item:
+      displayname: 青鱼
   Lemon Shark: ''
+    item:
+      displayname: 柠檬鲨
   Sea Snail:
     item:
+      displayname: 贝壳
       material: NAUTILUS_SHELL
   Eel: ''
+    item:
+      displayname: 鳗鱼
   Tadpole: ''
+    item:
+      displayname: 蝌蚪
   Seagull Feather:
     item:
+      displayname: 海鸥羽毛
       material: FEATHER

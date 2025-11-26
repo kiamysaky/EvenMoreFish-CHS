@@ -19,12 +19,12 @@ contest-end: <reset>钓鱼比赛已结束.
 # The message to be sent when a player joins whilst a competition is going on
 contest-join: <reset>钓鱼比赛正在进行中.
 # Shown to players when a new player takes #1 spot, remove this value or set it to "" to disable this message
-new-first: '<reset>{player}现在成为比赛的第一名'
+new-first: <reset>{player}现在成为比赛的第一名
 # Should this message appear in chat (false) or above the exp bar (true)
 action-bar-message: true
 # What competition types should the action bar be used for? (recommended: MOST_FISH)
 action-bar-types:
-  - MOST_FISH
+- MOST_FISH
 # What should replace the {type} variable for each competition type?
 competition-types:
   # MOST_FISH
@@ -54,32 +54,32 @@ duration:
   minute: <white>{minute}m
   second: <white>{second}s
 # The prefix shown in commands. Keeping the space in is recommended.
-prefix-regular: '<bold><aqua>更多的鱼 <reset></aqua></bold><gray>>> '
+prefix-regular: '更多的鱼 <reset><gray> '
 # The prefix shown in admin commands.
 prefix-admin: '<bold><aqua>更多的鱼 <reset></aqua></bold><gray>>> '
 # The prefix shown when errors occur e.g. no permission to run a command.
-prefix-error: '<bold><aqua>更多的鱼 <reset></aqua></bold><gray>>> '
+prefix-error: '更多的鱼 <reset><gray> '
 # This is the format of the lore given to fish when they're caught.
 # {custom-lore} is specified in the fish configs under the lore: section, if the fish has a lore, the lore's lines will
 # replace the {fish_lore}, however if it's empty the line will be removed. DO NOT ADD ANYTHING OTHER THAN THIS VARIABLE
 # TO THAT LINE.
 fish-lore:
-  - '{fisherman_lore}'
-  - '{length_lore}'
-  - ''
-  - '{fish_lore}'
-  - '{rarity_colour}<bold>{rarity}'
+- '{fisherman_lore}'
+- '{length_lore}'
+- ''
+- '{fish_lore}'
+- '{rarity_colour}<bold>{rarity}'
 # Sets what to replace with the {fisherman_lore} or {length_lore} with above ^
 fisherman-lore:
-  - <white>被{player}抓住
+- <white>被{player}抓住
 length-lore:
-  - <white>长度为 {length} 厘米。
+- <white>长度为 {length} 厘米。
 # The format of the leaderboard after a competition is over (this message doesn't support papi placeholders)
-leaderboard-largest-fish: '<white>#{position} | {player} (<b>{rarity}</b> {fish}, {length}cm)'
-leaderboard-largest-total: '<white>#{position} | {player} <white>({amount}cm<white>)'
-leaderboard-most-fish: '<white>#{position} | {player} <white>({amount} <white>鱼)'
-leaderboard-shortest-fish: '<white>#{position} | {player} <white>(<b>{rarity}</b> {fish}<white>, {length}cm<white>)'
-leaderboard-shortest-total: '<white>#{position} | {player} <white>({amount}cm<white>)'
+leaderboard-largest-fish: <white>#{position} | {player} (<b>{rarity}</b> {fish}, {length}cm)
+leaderboard-largest-total: <white>#{position} | {player} <white>({amount}cm<white>)
+leaderboard-most-fish: <white>#{position} | {player} <white>({amount} <white>鱼)
+leaderboard-shortest-fish: <white>#{position} | {player} <white>(<b>{rarity}</b> {fish}<white>, {length}cm<white>)
+leaderboard-shortest-total: <white>#{position} | {player} <white>({amount}cm<white>)
 # If you're running a competition where there's no leaderboard, this message is sent when there's a winner
 single-winner: <reset>{player} 赢得了这场比赛!
 # This shows the number of players currently in the competition, set to "" to disable.
@@ -105,11 +105,11 @@ time-alert: <white>{type} 比赛还剩 {time_formatted} 场
 # # – prints a digit if provided, nothing otherwise
 # . – indicate where to put the decimal separator
 # , – indicate where to put the grouping separator
-sell-price-format: '$#,##0.0'
+sell-price-format: $#,##0.0
 # The message sent to players when they've sold their fish in the /emf shop
 fish-sale: <white>你出售了 </white><green>{amount} </green><white>条鱼，赚取了 </white><yellow>{sell-price} </yellow><white>块钱！
 # The message sent to players when they attempt to sell and there are no sellable fish
-no-sellable-fish: <white>You have nothing to sell!
+no-sellable-fish: <red>你没有能出售的物品!
 # Help messages
 # General help (/emf help) - permission node dependant commands will only show if they are formatted with the forward-slash.
 help-format: '[noPrefix]<aqua>{command} <yellow>- {description}'
@@ -124,7 +124,7 @@ help-general:
   sellall: '[noPrefix]出售物品栏中的所有鱼.'
   next: '[noPrefix]显示距离下一次竞赛还有多长时间.'
   applybaits: '[noPrefix]将鱼饵应用到鱼竿上.'
-  journal: "[noPrefix]查看捕获记录和它们的统计信息."
+  journal: '[noPrefix]查看捕获记录和它们的统计信息.'
 help-list:
   fish: '[noPrefix]显示在一个稀有度内所有的鱼.'
   rarities: '[noPrefix]显示所有稀有度.'
@@ -171,7 +171,7 @@ emf-most-fish-format: '{amount} 条鱼'
 # What should be displayed for %emf_competition_place_size_*% during the MOST_FISH competition?
 emf-size-during-most-fish: N/A
 # How the %emf_competition_time_left% variable should be formatted.
-emf-time-remaining: '<aqua>距离下次更多的鱼还有： {days}天, {hours}时, {minutes}分'
+emf-time-remaining: <aqua>距离下次更多的鱼还有： {days}天, {hours}时, {minutes}分
 # Replaces the %emf_competition_time_left% variable when there's a competition already running.
 emf-time-remaining-during-comp: <aqua>现在有一个钓鱼比赛正在进行中
 # Sent when a player tries to apply too many types of baits to a fishing rod, set in the general section of baits.yml
@@ -190,11 +190,11 @@ bait-rod-protection: <white>保护好你应用过饵料的钓鱼竿. 如果你�
 bait-invalid-rod: <white>你不能对这只钓鱼棒应用鱼饵!
 toggle:
   fishing:
-    off: <white>You will no longer catch custom fish.
-    on: <white>You will now catch custom fish.
+    off: <green>你不会再捕获自定义鱼类.
+    on: <green>你现在能捕获自定义鱼类.
   bossbar:
-    off: <white>You will no longer see competition bossbars.
-    on: <white>You will now see competition bossbars.
+    off: <green>你不会再看到比赛栏.
+    on: <green>你现在能看到比赛栏.
 admin:
   # Opens an /emf shop for another player
   open-fish-shop: <green>为玩家{player}打开了钓鱼商店.
@@ -223,7 +223,7 @@ admin:
   # Sent when a competition is already running when using /emf admin competition start
   competition-already-running: <aqua>已经有一场钓鱼比赛在进行了
   # When an invalid competition type is provided
-  competition-type-invalid: '<green>这不是一个竞争类型，可用类型：MOST_FISH, LARGEST_FISH, SPECIFIC_FISH'
+  competition-type-invalid: <green>这不是一个竞争类型，可用类型：MOST_FISH, LARGEST_FISH, SPECIFIC_FISH
   # When an invalid competition id is provided
   competition-id-invalid: <white>这不是一个有效的竞赛id.
   # When the command /emf admin custom-rod is run.
@@ -237,36 +237,36 @@ admin:
 # When an invalid rarity is provided for a command.
 rarity-invalid: <white>这不是一个有效的稀有度!
 # When the player can't access the Fishing Journal
-journal-disabled: <white>The Fishing Journal is not accessible. Please enable the plugin's database.
+journal-disabled: The Fishing Journal is not accessible. Please enable the plugin's database.
 # Bait messages
 bait:
   # How the lore should look ({baits} takes up multiple lines)
   rod-lore:
-    - <white>
-    - '<gray>鱼饵槽位: <yellow>({current_baits}/{max_baits})'
-    - <white>
-    - '{baits}'
-    - <white>
+  - <white>
+  - '<gray>鱼饵槽位: <yellow>({current_baits}/{max_baits})'
+  - <white>
+  - '{baits}'
+  - <white>
   # The default lore of the bait, changing this will not modify existing baits, but with an /emf admin reload, new baits
   # given out will have this lore. Bait themes can be set as a colour or prefix and be used in this lore.
   bait-lore:
-    - <white>
-    - '提高捕获率：'
-    - '{boosts}'
-    - '{lore}'
-    - <white>
-    - '<#dadada>扔到一个钓鱼杆上以应用.'
-    - '<#dadada>或按住 <u>SHIFT</u> 来应用所有.'
-    - <white>
+  - <white>
+  - 提高捕获率：
+  - '{boosts}'
+  - '{lore}'
+  - <white>
+  - <#dadada>扔到一个钓鱼杆上以应用.
+  - <#dadada>或按住 <u>SHIFT</u> 来应用所有.
+  - <white>
   # How the baits should look in each line of the {baits} variable above ^. {baits} respects the display name setting,
   # the <gold> is there for baits without a display name set.
   baits: <gold>► {amount} {bait}
   # These are listed in the {boosts} variable above in bait-lore
   # boost-rarity/rarities: shown when the bait only impacts 1 rarity or when it impacts multiple rarities.
   # boost-fish: shown when the bait impacts some fish individually.
-  boosts-rarity: '► <white>1 Rarity'
-  boosts-rarities: '► <white>{amount} Rarities'
-  boosts-fish: '► <white>{amount} Fish'
+  boosts-rarity: ► <white>1 Rarity
+  boosts-rarities: ► <white>{amount} Rarities
+  boosts-fish: ► <white>{amount} Fish
   # This is added to the lore in place of a bait if show-unused-slots is enabled in the general section.
   unused-slot: <gray>► ? <i>Available Slot
 # ATTENTION ATTENTION ATTENTION
