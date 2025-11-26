@@ -12,16 +12,19 @@ size:
 fish:
   Rusty Bucket:
     item:
+      displayname: 生锈的桶
       raw-material: BUCKET
   Rusty Spoon:
     item:
+      displayname: 生锈的铲子
       material: IRON_SHOVEL
   Fishing Rod:
     item:
+      displayname: 钓鱼竿
       material: FISHING_ROD
   Explorers Boat:
     item:
-      displayname: Explorer's Boat
+      displayname: 探险者的船
       materials:
         - OAK_BOAT
         - SPRUCE_BOAT
@@ -34,4 +37,4 @@ fish:
     item:
       material: LEATHER_HELMET
       dye-colour: '#888877'
-      displayname: Old Fisher's Hat
+      displayname: 老渔夫的帽子
