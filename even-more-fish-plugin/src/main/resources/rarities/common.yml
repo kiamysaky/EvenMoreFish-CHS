@@ -10,7 +10,7 @@ size:
   maxSize: 30
 
 fish:
-  Cod: ''
+  Cod:
     item: 
       displayname: 鳕鱼
   Atlantic Cod:
@@ -25,13 +25,13 @@ fish:
         - LUKEWARM_OCEAN
         - OCEAN
         - WARM_OCEAN
-  Rockfish: ''
+  Rockfish:
     item: 
       displayname: 石斑鱼
-  Tuna: ''
+  Tuna:
     item: 
       displayname: 金枪鱼
-  Mackerel: ''
+  Mackerel:
     item: 
       displayname: 鲭鱼
   Spanish Mackerel:
@@ -52,44 +52,44 @@ fish:
     item:
       displayname: 热带鱼
       material: TROPICAL_FISH
-  Red Mullet: ''
+  Red Mullet:
     item:
       displayname: 红鲻鱼
-  Anchovy: ''
+  Anchovy:
     item:
       displayname: 热带鱼
-  Haddock: ''
+  Haddock:
     item:
       displayname: 黑线鳕
-  Bluefish: ''
+  Bluefish:
     item:
       displayname: 蓝鲣
-  Carp: ''
+  Carp:
     item:
       displayname: 鲤鱼
-  Silver Carp: ''
+  Silver Carp:
     item:
       displayname: 鲢鱼
-  Grass Carp: ''
+  Grass Carp:
     item:
       displayname: 草鱼
-  Koi Carp: ''
+  Koi Carp:
     item:
       displayname: 锦鲤
-  Black Carp: ''
+  Black Carp:
     item:
       displayname: 青鱼
-  Lemon Shark: ''
+  Lemon Shark:
     item:
       displayname: 柠檬鲨
   Sea Snail:
     item:
       displayname: 贝壳
       material: NAUTILUS_SHELL
-  Eel: ''
+  Eel:
     item:
       displayname: 鳗鱼
-  Tadpole: ''
+  Tadpole:
     item:
       displayname: 蝌蚪
   Seagull Feather:
